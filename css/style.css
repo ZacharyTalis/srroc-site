@@ -1,0 +1,39 @@
+body {
+    background-color: #E5EEF3;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+h1 {
+    color: #0C2030;
+    font-size: 2.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+p {
+    font-family: 'Cousine', monospace;
+    font-size: 2rem;
+}
+
+a {
+    color: #BF2E4E;
+    text-decoration-style: dashed;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    max-width: 50rem;
+}
+
+.top-links p {
+    display: inline;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.top-links a {
+    font-size: 2rem;
+}
