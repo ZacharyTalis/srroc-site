@@ -1,12 +1,12 @@
 body {
     background-color: #E5EEF3;
+    color: #0C2030;
     max-width: 70%;
     margin: auto;
     margin-top: 3rem;
 }
 
 h1 {
-    color: #0C2030;
     font-size: 2.5rem;
     font-family: 'Space Grotesk', sans-serif;
 }
