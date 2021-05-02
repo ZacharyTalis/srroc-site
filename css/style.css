@@ -31,40 +31,39 @@ a {
     padding: 0;
 }
 
-#top-links ul > li {
+#top-links ul>li {
     list-style-type: none;
 }
 
-#top-links ul > li::before {
+#top-links ul>li::before {
     content: '▪';
     font-size: 1.5rem;
 }
 
 /* "Small" Screens */
+
 @media screen and (max-width: 1250px) {
-    #top-links ul > li {
+    #top-links ul>li {
         /* add some spacing for tapping */
         margin-top: 1rem;
     }
-
-    #top-links ul > li:first-child {
+    #top-links ul>li:first-child {
         /* Keep margin for first element */
         margin-top: inherit;
     }
 }
 
 /* Move to Inline Top Links with "Large" Screens */
+
 @media screen and (min-width: 1250px) {
     #top-links ul {
         overflow: auto;
     }
-
-    #top-links ul > li {
+    #top-links ul>li {
         float: left;
         margin-right: 1rem;
     }
-    
-    #top-links ul > li:first-child::before {
+    #top-links ul>li:first-child::before {
         content: none;
     }
 }
