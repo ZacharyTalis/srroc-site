@@ -4,16 +4,13 @@ body {
     max-width: 70%;
     margin: auto;
     margin-top: 3rem;
+    font-family: 'Cousine', monospace;
+    font-size: 2rem;
 }
 
 h1 {
     font-size: 2.5rem;
     font-family: 'Space Grotesk', sans-serif;
-}
-
-p {
-    font-family: 'Cousine', monospace;
-    font-size: 2rem;
 }
 
 a {
@@ -28,12 +25,27 @@ a {
     max-width: 50rem;
 }
 
-.top-links p {
-    display: inline;
-    padding-right: 1rem;
+#top-links ul {
+    overflow: auto;
+    list-style: "*";
+}
+
+#top-links ul {
+    margin: 0;
+    padding: 0;
+}
+
+#top-links ul > li {
+    list-style-type: none;
+    float: left;
+    margin-right: 1rem;
+}
+
+#top-links ul > li::before {
+    content: '▪';
     font-size: 1.5rem;
 }
 
-.top-links a {
-    font-size: 2rem;
+#top-links ul > li:first-child::before {
+    content: none;
 }
