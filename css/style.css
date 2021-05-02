@@ -27,19 +27,12 @@ a {
 }
 
 #top-links ul {
-    overflow: auto;
-    list-style: "*";
-}
-
-#top-links ul {
     margin: 0;
     padding: 0;
 }
 
 #top-links ul > li {
     list-style-type: none;
-    float: left;
-    margin-right: 1rem;
 }
 
 #top-links ul > li::before {
@@ -47,6 +40,31 @@ a {
     font-size: 1.5rem;
 }
 
-#top-links ul > li:first-child::before {
-    content: none;
+/* "Small" Screens */
+@media screen and (max-width: 1250px) {
+    #top-links ul > li {
+        /* add some spacing for tapping */
+        margin-top: 1rem;
+    }
+
+    #top-links ul > li:first-child {
+        /* Keep margin for first element */
+        margin-top: inherit;
+    }
+}
+
+/* Move to Inline Top Links with "Large" Screens */
+@media screen and (min-width: 1250px) {
+    #top-links ul {
+        overflow: auto;
+    }
+
+    #top-links ul > li {
+        float: left;
+        margin-right: 1rem;
+    }
+    
+    #top-links ul > li:first-child::before {
+        content: none;
+    }
 }
